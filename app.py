@@ -71,5 +71,3 @@ def get_book_names():
     user_input = request.form.get('user_input')
     matching_books = [book for book in pt.index if user_input.lower() in book.lower()]
     return json.dumps(matching_books)
-
-
